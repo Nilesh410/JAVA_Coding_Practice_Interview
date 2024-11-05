@@ -6,7 +6,11 @@ public class Palindrome {
         System.out.println("Enter the input string to check palindrome");
         String str=sc.nextLine();
         String reverseString=new StringBuffer(str).reverse().toString();
-        if(str.equals(reverseString))
+        // if(str.equals(reverseString))
+        // System.out.println("String is palindrome");
+        // else
+        // System.out.println("string is not palindrome");
+        if(str.equals(new StringBuffer(str).reverse().toString()))
         System.out.println("String is palindrome");
         else
         System.out.println("string is not palindrome");
